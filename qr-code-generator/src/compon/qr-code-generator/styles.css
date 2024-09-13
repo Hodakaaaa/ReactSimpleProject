@@ -1,0 +1,77 @@
+/* QRCodeGenerator.css */
+
+/* Container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f5;
+    padding: 20px;
+}
+
+/* Title styling */
+.title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Input and button container */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+/* Input field styling */
+.input-field {
+    padding: 10px;
+    width: 300px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #174ea2;
+}
+
+/* Button styling */
+.generate-button {
+    padding: 10px 20px;
+    background-color: #174ea2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.generate-button:hover {
+    background-color: #ee2c49;
+}
+
+.generate-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* QR Code styling */
+.qr-code-container {
+    margin-top: 30px;
+}
+
+.qr-code {
+    border: 5px solid #333;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
