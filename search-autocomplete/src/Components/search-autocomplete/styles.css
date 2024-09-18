@@ -1,0 +1,92 @@
+/* Container for search input */
+.search-autocomplete-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Styling for the search input */
+input[name="search-users"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Input hover and focus effects */
+input[name="search-users"]:hover, input[name="search-users"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0 3px 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Suggestions dropdown container */
+.suggestions-container {
+    width: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Individual suggestion item */
+.suggestion-item {
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for suggestion items */
+.suggestion-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Loading text styling */
+h1 {
+    font-size: 18px;
+    color: #007BFF;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Animation for dropdown */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Scrollbar styling for suggestions container */
+.suggestions-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.suggestions-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.suggestions-container::-webkit-scrollbar-thumb:hover {
+    background-color: #007BFF;
+}
