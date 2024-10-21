@@ -1,6 +1,7 @@
 
 import './App.css';
 import UseFetchHookTest from './components/test';
+import UseOnClickOutsideTest from './components/use-outside-click/test';
 
 
 function App() {
@@ -8,7 +9,10 @@ function App() {
     <div className="App">
 
       {/* use-fecth- Custom Hook */}
-      <UseFetchHookTest/>
+      {/* <UseFetchHookTest/> */}
+
+      {/* Use OnClick Outside Hook Test */}
+      <UseOnClickOutsideTest/>
       
     </div>
   );

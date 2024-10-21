@@ -1,7 +1,4 @@
 import { useState, useEffect } from "react";
-
-
-
 export default function useFetch(url, options={}){
     const [data, setData] =  useState(null);
     const [pending, setPending] = useState(false);
